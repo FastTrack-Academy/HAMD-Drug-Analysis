@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+geopy
+Pillow
+plotly
+pydeck
+openpyxl
