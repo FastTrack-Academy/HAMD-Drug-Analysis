@@ -114,7 +114,7 @@ elif option == "HAMD":
     ("HAMD01", "HAMD02", "HAMD03", "HAMD04", "HAMD05", "HAMD06", "HAMD07", "HAMD08", "HAMD09", "HAMD10", "HAMD11", "HAMD12", "HAMD13", "HAMD14", "HAMD15", "HAMD16", "HAMD17",),
     )
     
-    text_s = open('views/Drug Analysis/drugINFO.txt', 'r').read()
+    text_s = open('drugINFO.txt', 'r').read()
     
     textdic = {}
     for i in range (1,18):
