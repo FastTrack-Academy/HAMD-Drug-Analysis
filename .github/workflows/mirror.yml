@@ -1,0 +1,16 @@
+name: Sync from Personal Repo
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror Repository
+        run: |
+          git clone --mirror https://github.com/hudswang/HAMD-Drug-Analysis.git
+          cd HAMD-Drug-Analysis.git
+          git push --mirror https://github.com/FastTrack-Academy/HAMD-Drug-Analysis.git
